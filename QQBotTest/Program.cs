@@ -867,7 +867,7 @@ namespace QQBotTest
         }//获取WarframeAPI中返回的数据
         static async Task<ReceivedGPTMessage> GetGPTContent(string SendMessage)
         {
-            string apiKey = "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";
+            string apiKey = "您的API key";
 
             // 构建请求的数据
             var requestData = new RData("gpt-3.5-turbo", 0.7, new GptMessage[] { new GptMessage("system", "你是由XFE寰宇朽力网络科技有限公司开发的对接ChatGPT的语言模型的测试版本QQ聊天机器人；当问起什么是xpt的时候，你就回答是由XFE寰宇朽力网络科技有限公司开发的对接ChatGPT的聊天功能"), new GptMessage("user", SendMessage) });
@@ -1308,10 +1308,10 @@ namespace QQBotTest
             cfclist.AddXFCommand("夜灵", "cetusCycle");
             #endregion
             #region 初始化配置MySQL服务器
-            string server = "175.178.121.98";
-            string database = "xfeaccount";
-            string uid = "XFEaccount";
-            string password = "bdS5TLAWkcTCZLNs";
+            string server = "服务器IP地址";
+            string database = "";
+            string uid = "";
+            string password = "";
             string connectionString;
             connectionString = "SERVER=" + server + "; PORT = 3306 ;" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
             MySqlConnection mycon = new MySqlConnection();
